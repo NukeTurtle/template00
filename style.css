@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+    line-height: 1.6;
+    height: 100vh;
+    overflow-x: hidden;
+}
+#hero{
+    background: linear-gradient(-22.5deg, #ED7A4D, #EDCA4D);
+    background-size: cover;
+    height: 100vh;
+    transform: rotate(-12.5deg);
+    margin: -20% -30%;
+    width: 150%;
+}
+.hero_content{
+    position: absolute;
+    margin: 20% 36%;
+    transform: rotate(12.5deg);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 50vw;
+}
+.logo{
+    background: url("logo.png");
+    background-size: cover;
+    width: 6em;
+    height: 6em;
+}
+nav{
+    width: 90%;
+    text-align: right;
+}
+nav a{
+    padding: 25px;
+    color: #fff;
+    text-decoration: none;
+}
+#hero_image{
+    height: 26vh;
+    width: 48vw;
+    position: absolute;
+    margin: 82vh 0 0 40vw;
+}
+.piramid{
+    background: url("piramid.png");
+    height: 100%;
+    width: 100%;
+    transform: rotate(12.5deg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+section{
+    height: 100vh;
+    scroll-snap-align: center;
+}
+section:nth-child(1){
+    height: 119vh;
+    z-index: -1;
+}
+section:nth-child(2){
+    background-color: #fff;
+    z-index: 2;
+}
+section:nth-child(3){
+    background-color: brown;
+}
+section:nth-child(4){
+    background-color: burlywood;
+}
+section:nth-child(5){
+    background-color: cornflowerblue;
+}
+
+@media screen and (max-width: 1760px){
+    nav a{
+    padding: 5px 25px;
+    display: list-item;
+    list-style-type: none;
+    }
+}
